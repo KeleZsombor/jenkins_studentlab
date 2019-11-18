@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('first') {
             steps {
-                sh 'ping google.com'                
+                sh 'ping google.com -c 5'                
             }
         }
         stage('second') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('third') {
             steps {
-                sh 'curl 192.168.56.200'                
+                sh 'curl https://192.168.56.200'                
             }
         }
     }
