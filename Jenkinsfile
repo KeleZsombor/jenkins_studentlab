@@ -13,7 +13,7 @@ pipeline {
         }
         stage('third') {
             steps {
-                sh 'curl https://192.168.56.200'                
+                sh 'curl http://192.168.56.200'                
             }
         }
     }
